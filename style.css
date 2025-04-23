@@ -256,10 +256,23 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
   }
 
   .menu-toggle {
     display: flex;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1002;
+  }
+
+  .logo {
+    position: absolute;
+    top: 1px;
+    right: 350px;
+    width: 60px;
+    height: auto;
   }
 
   nav {
@@ -273,6 +286,8 @@ h1 {
     padding: 2rem;
     transition: right 0.3s ease-in-out;
     z-index: 1001;
+    align-items: center;
+    text-align: center;
   }
 
   nav.active {
@@ -286,5 +301,27 @@ h1 {
   nav ul {
     flex-direction: column;
     gap: 1.5rem;
+    padding: 0;
+  }
+
+  main {
+
+    text-align: center;
+    padding: 50px 1rem;
+  }
+
+  .content {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    gap: px;
+  }
+
+  h1, .description {
+    text-align: center;
   }
 }
