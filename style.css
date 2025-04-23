@@ -1,230 +1,290 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Helvetica Neue', sans-serif;
-    background-color: #fff;
-    color: #111;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff;
+  color: #111;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  padding-right: 120px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.boost {
+  color: #0055ff;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  background-color: #f0f0f0;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+}
+
+.content {
+  max-width: 600px;
+  padding-left: 100px;
+}
+
+.tagline {
+  color: #777;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #0055ff;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #0055ff;
+  color: #fff;
+}
+
+.image-container img {
+  width: 500px;
+  max-width: 100%;
+ 
+}
+.logo{
+ width: 70px;
+  height: 100px;
+   margin-left: 120px;
+ 
+} 
+.cart-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: none;
+  justify-content: flex-end;
+  z-index: 1000;
+}
+
+.cart-modal.active {
+  display: flex;
+}
+
+.cart-content {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  background-color: white;
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.cart-content h2 {
+  font-size: 2rem;
+}
+
+.total-label {
+  font-size: 1.2rem;
+}
+
+.total-amount {
+  font-size: 1.5rem;
+  color: #0055ff;
+  font-weight: bold;
+}
+
+.promo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.promo-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.cart-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.continue-btn,
+.checkout-btn {
+  padding: 0.8rem;
+  border: 2px solid #0055ff;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  flex: 1;
+}
+
+.continue-btn {
+  background-color: white;
+  color: #111;
+}
+
+.checkout-btn {
+  background-color: #0055ff;
+  color: white;
+}
+
+.terms {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+@media (max-width: 768px) {
   header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 3rem;
-    padding-right: 120px;
-  }
-  
-  .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-  }
-  
-  .boost {
-    color: #0055ff;
-  }
-  
-  nav ul {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-    padding-bottom: 20px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #111;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-  }
-  
-  nav a:hover {
-    background-color: #f0f0f0;
-  }
-  
-  main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4rem;
-  }
-  
-  .content {
-    max-width: 600px;
-    padding-left: 100px;
-  }
-  
-  .tagline {
-    color: #777;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-  }
-  
-  .description {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    color: #444;
-  }
-  
-  .cta-button {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    border: 2px solid #0055ff;
-    color: black;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-  }
-  
-  .cta-button:hover {
-    background-color: #0055ff;
-    color: #fff;
-  }
-  
-  .image-container img {
-    width: 500px;
-    max-width: 100%;
-   
-  }
-  .logo{
-   width: 70px;
-    height: 100px;
-     margin-left: 120px;
-   
-  } 
-  .cart-modal {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.4);
-    display: none;
-    justify-content: flex-end;
-    z-index: 1000;
-  }
-  
-  .cart-modal.active {
-    display: flex;
-  }
-  
-  .cart-content {
-    width: 100%;
-    max-width: 400px;
-    height: 100%;
-    background-color: white;
-    padding: 2rem;
-    position: relative;
-    display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+    align-items: flex-start;
+    gap: 1rem;
   }
-  
-  .close-btn {
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    font-size: 1.5rem;
-    cursor: pointer;
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
   }
-  
-  .cart-content h2 {
+
+  main {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  h1 {
     font-size: 2rem;
   }
-  
-  .total-label {
-    font-size: 1.2rem;
+
+  .cta-button {
+    margin-top: 1rem;
   }
-  
-  .total-amount {
-    font-size: 1.5rem;
-    color: #0055ff;
-    font-weight: bold;
-  }
-  
-  .promo {
-    display: flex;
+}
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+.close-menu {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    gap: 0.5rem;
   }
-  
-  .promo-btn {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  
-  .cart-buttons {
+
+  .menu-toggle {
     display: flex;
-    gap: 1rem;
   }
-  
-  .continue-btn,
-  .checkout-btn {
-    padding: 0.8rem;
-    border: 2px solid #0055ff;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    flex: 1;
-  }
-  
-  .continue-btn {
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
     background-color: white;
-    color: #111;
+    flex-direction: column;
+    padding: 2rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 1001;
   }
-  
-  .checkout-btn {
-    background-color: #0055ff;
-    color: white;
+
+  nav.active {
+    right: 0;
   }
-  
-  .terms {
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
+
+  .close-menu {
+    display: block;
   }
-  @media (max-width: 768px) {
-    header {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
-    }
-  
-    nav ul {
-      flex-direction: column;
-      gap: 1rem;
-      width: 100%;
-    }
-  
-    main {
-      flex-direction: column;
-      padding: 2rem;
-      text-align: center;
-    }
-  
-    .content {
-      text-align: center;
-    }
-  
-    h1 {
-      font-size: 2rem;
-    }
-  
-    .cta-button {
-      margin-top: 1rem;
-    }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1.5rem;
   }
+}

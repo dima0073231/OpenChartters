@@ -8,8 +8,14 @@
 </head>
 <body>
   <header>
-    <img  class="logo"src="./img.png" alt="">
-    <nav>
+    <img class="logo" src="./img.png" alt="">
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <nav id="navbar">
+      <span class="close-menu" onclick="toggleMenu()">&times;</span>
       <ul>
         <li><a href="#">Services</a></li>
         <li><a href="#">FAQ</a></li>
@@ -23,11 +29,10 @@
 
   <main>
     <div class="content">
-     
       <h1>Відкрий доступ до топових інструментів — швидко та вигідно!</h1>
       <p class="description">
-       OpenChatters — твій простий спосіб отримати підписку на популярні онлайн-сервіси, такі як ChatGPT, Midjourney, TGStat, Canva, AdSpy та інші.
-Тестуй перед покупкою, обирай зручний тариф та починай користуватись вже сьогодні!
+        OpenChatters — твій простий спосіб отримати підписку на популярні онлайн-сервіси, такі як ChatGPT, Midjourney, TGStat, Canva, AdSpy та інші.
+        Тестуй перед покупкою, обирай зручний тариф та починай користуватись вже сьогодні!
       </p>
       <a href="#" class="cta-button">Виберіть свій сервіс</a>
     </div>
@@ -35,6 +40,7 @@
       <img src="img2.png" alt="Futuristic musicians" />
     </div>
   </main>
+
   <div id="cartModal" class="cart-modal">
     <div class="cart-content">
       <span class="close-btn" onclick="toggleCart()">&times;</span>
