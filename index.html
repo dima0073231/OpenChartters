@@ -17,34 +17,111 @@
     <nav id="navbar">
       <span class="close-menu" onclick="toggleMenu()">&times;</span>
       <ul>
-        <li><a href="#">Сервіс</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Блог</a></li>
-        <li><a href="#">Про нас</a></li>
-        <li><a href="#">Мій аккаунт</a></li>
+        <li><a href="#" data-i18n="service">Сервіс</a></li>
+        <li><a href="#" data-i18n="faq">FAQ</a></li>
+        <li><a href="#" data-i18n="blog">Блог</a></li>
+        <li><a href="#" data-i18n="about">Про нас</a></li>
+        <li><a href="#" data-i18n="account">Мій аккаунт</a></li>
         <li><a href="#" class="cart-icon" onclick="toggleCart()">🛒</a></li>
       </ul>
     </nav>
+    <div class="language-switcher">
+      <select onchange="changeLanguage(this.value)">
+        <option value="uk">Українська</option>
+        <option value="en">English</option>
+        <option value="ru">Русский</option>
+        <option value="zh">中文</option>
+        <option value="es">Español</option>
+      </select>
+    </div>
   </header>
 
   <main>
     <div class="content">
-      <h1>Відкрий доступ до топових інструментів — швидко та вигідно!</h1>
-      <p class="description">
+      <h1 data-i18n="main_heading">Відкрий доступ до топових інструментів — швидко та вигідно!</h1>
+      <p class="description" data-i18n="main_description">
         OpenChatters — твій простий спосіб отримати підписку на популярні онлайн-сервіси, такі як ChatGPT, Midjourney, TGStat, Canva, AdSpy та інші.
         Тестуй перед покупкою, обирай зручний тариф та починай користуватись вже сьогодні!
       </p>
-      <a href="#" class="cta-button">Виберіть свій сервіс</a>
+      <a href="#" class="cta-button" data-i18n="choose_service" >Виберіть свій сервіс</a>
     </div>
     <div class="image-container">
       <img src="img2.png" alt="Futuristic musicians" />
     </div>
   </main>
+  <section class="services-section">
+    <h2 class="services-title">Оберіть свій творчий інструмент</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <img src="#" alt="" class="service-logo" />
+        <ul>
+          <li>Lorem ipsum dolor...
+          </li>
+         
+        </ul>
+        <p>Price: €10</p>
+        <button onclick="addToCart('card1', 10)" class="add-btn">Добавить в корзину</button>
+      </div>
+
+      <div class="service-card">
+        <img src="#" alt="" class="service-logo" />
+        <ul>
+          <li>Lorem ipsum dolor....</li>
+         
+        </ul>
+        <p>Price: €12</p>
+        <button onclick="addToCart('card2', 12)" class="add-btn">Добавить в корзину</button>
+      </div>
+
+      <div class="service-card">
+        <img src="#" alt="" class="service-logo" />
+        <ul>
+          <li>Lorem ipsum dolor....</li>
+         
+        </ul>
+        <p>Price: €15</p>
+        <button onclick="addToCart('card3', 15)" class="add-btn">Добавить в корзину</button>
+      </div>
+    </div>
+  </section>
 
   <div id="cartModal" class="cart-modal">
     <div class="cart-content">
       <span class="close-btn" onclick="toggleCart()">&times;</span>
       <h2>Cart</h2>
+      <ul id="cart-items" class="cart-items"></ul>
+      <p class="total-label">Total:</p>
+      <p class="total-amount" id="total-amount">€ 0.00</p>
+      <div class="promo">
+        <label for="promo-input">Add a Promo code</label>
+        <div class="promo-code-input">
+          <input type="text" id="promo-input" placeholder="Enter promo code" />
+          <button onclick="applyPromo()">Apply</button>
+        </div>
+        <p id="promo-message" style="color: blue;"></p>
+      </div>
+      <div class="cart-buttons">
+        <button class="continue-btn">Continue shopping</button>
+        <button class="checkout-btn" 
+  data-title="SoundCloud Starter Guide: Grow Your Fans and Plays"
+  data-price="50.00"
+  data-quantity="1">
+  Checkout
+</button>
+
+      </div>
+      <label class="terms">
+        <input type="checkbox" checked />
+        I have read <a href="#">terms and conditions</a> and agree to them
+      </label>
+    </div>
+  </div>
+
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-content">
+      <span class="close-btn" onclick="toggleCart()">&times;</span>
+      <h2>Cart</h2>
+      <ul id="cart-items" class="cart-items"></ul>
       <p class="total-label">Total:</p>
       <p class="total-amount">€ 0,00</p>
       <div class="promo">

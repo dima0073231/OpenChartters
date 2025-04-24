@@ -120,14 +120,14 @@ h1 {
 
 .cart-content {
   width: 100%;
-  max-width: 400px;
+  max-width:708px;
   height: 100%;
   background-color: white;
   padding: 2rem;
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 4rem;
   box-shadow: -5px 0 15px rgba(0,0,0,0.2);
 }
 
@@ -318,10 +318,255 @@ h1 {
   .image-container {
     display: flex;
     justify-content: center;
-    gap: px;
+
   }
 
   h1, .description {
     text-align: center;
   }
+}
+.services-section {
+  padding: 4rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.services-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  max-width: 300px;
+  flex: 1;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-logo {
+  height: 40px;
+  margin-bottom: 1rem;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-card li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.add-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #333;
+}
+
+.cart-preview {
+  margin-top: 2rem;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 1rem;
+  max-width: 600px;
+  margin-inline: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+#cart-list {
+  padding-left: 1rem;
+}
+.cart-items {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+.cart-items li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.add-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #555;
+}
+.promo-code-input {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.promo-code-input input {
+  flex: 1;
+  padding: 0.4rem;
+}
+
+.promo-code-input button {
+  padding: 0.4rem 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.language-switcher {
+  position: absolute;
+  right: 4rem;
+  top: 2rem;
+  border:none;
+  @media (min-width:768px) {
+    right: 1rem;
+    
+  }
+  
+}
+
+.language-switcher select {
+  padding: 0.4rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.subscription-select {
+  margin-top: 0.5rem;
+}
+.checkout-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.checkout-modal.active {
+  display: flex;
+}
+
+.checkout-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.close-checkout {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.checkout-content button {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #0055ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.checkout-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+.checkout-form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+input, select, textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.order-summary {
+  flex: 1;
+  background: #f7f7f7;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.place-order {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem;
+  background: #0055ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.quantity-input {
+  width: 50px;
+  margin-left: 10px;
 }
