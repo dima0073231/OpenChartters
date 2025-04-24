@@ -25,15 +25,39 @@
         <li><a href="#" class="cart-icon" onclick="toggleCart()">🛒</a></li>
       </ul>
     </nav>
-    <div class="language-switcher">
-      <select onchange="changeLanguage(this.value)">
-        <option value="uk">Українська</option>
-        <option value="en">English</option>
-        <option value="ru">Русский</option>
-        <option value="zh">中文</option>
-        <option value="es">Español</option>
-      </select>
+   
+    <div class="custom-select-wrapper">
+      <div class="custom-select" id="languageSelect">
+        <div class="selected">
+          <span>Українська</span>
+          <img src="https://flagcdn.com/w40/ua.png" alt="UA">
+        </div>
+        <div class="options">
+          <div data-value="uk">
+            <span>Українська</span>
+            <img src="https://flagcdn.com/w40/ua.png" alt="UA">
+          </div>
+          <div data-value="en">
+            <span>English</span>
+            <img src="https://flagcdn.com/w40/gb.png" alt="GB">
+          </div>
+          <div data-value="ru">
+            <span>Русский</span>
+            <img src="https://flagcdn.com/w40/ru.png" alt="RU">
+          </div>
+          <div data-value="zh">
+            <span>中文</span>
+            <img src="https://flagcdn.com/w40/cn.png" alt="CN">
+          </div>
+          <div data-value="es">
+            <span>Español</span>
+            <img src="https://flagcdn.com/w40/es.png" alt="ES">
+          </div>
+        </div>
+      </div>
     </div>
+    
+    
   </header>
 
   <main>
@@ -50,7 +74,7 @@
     </div>
   </main>
   <section class="services-section">
-    <h2 class="services-title">Оберіть свій творчий інструмент</h2>
+    <h2 class="services-title" data-i18n="choose_instuments">Оберіть свій творчий інструмент</h2>
     <div class="services-container">
       <div class="service-card">
         <img src="#" alt="" class="service-logo" />
@@ -59,8 +83,8 @@
           </li>
          
         </ul>
-        <p>Price: €10</p>
-        <button onclick="addToCart('card1', 10)" class="add-btn">Добавить в корзину</button>
+        <p data-i18n="price">Price: €10</p>
+        <button onclick="addToCart('card1', 10)" class="add-btn" data-i18n="basket">Добавить в корзину</button>
       </div>
 
       <div class="service-card">
@@ -69,8 +93,8 @@
           <li>Lorem ipsum dolor....</li>
          
         </ul>
-        <p>Price: €12</p>
-        <button onclick="addToCart('card2', 12)" class="add-btn">Добавить в корзину</button>
+        <p data-i18n="price">Price: €12</p>
+        <button onclick="addToCart('card2', 12)" class="add-btn" data-i18n="basket">Добавить в корзину</button>
       </div>
 
       <div class="service-card">
@@ -79,8 +103,8 @@
           <li>Lorem ipsum dolor....</li>
          
         </ul>
-        <p>Price: €15</p>
-        <button onclick="addToCart('card3', 15)" class="add-btn">Добавить в корзину</button>
+        <p data-i18n="price">Price: €15</p>
+        <button onclick="addToCart('card3', 15)" class="add-btn" data-i18n="basket">Добавить в корзину</button>
       </div>
     </div>
   </section>

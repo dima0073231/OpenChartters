@@ -25,15 +25,37 @@
             <li><a href="#" class="cart-icon" onclick="toggleCart()">🛒</a></li>
           </ul>
         </nav>
-        <div class="language-switcher">
-          <select onchange="changeLanguage(this.value)">
-            <option value="uk">Українська</option>
-            <option value="en">English</option>
-            <option value="ru">Русский</option>
-            <option value="zh">中文</option>
-            <option value="es">Español</option>
-          </select>
-        </div>
+        <div class="custom-select-wrapper">
+            <div class="custom-select" id="languageSelect">
+              <div class="selected">
+                <span>Українська</span>
+                <img src="https://flagcdn.com/w40/ua.png" alt="UA">
+              </div>
+              <div class="options">
+                <div data-value="uk">
+                  <span>Українська</span>
+                  <img src="https://flagcdn.com/w40/ua.png" alt="UA">
+                </div>
+                <div data-value="en">
+                  <span>English</span>
+                  <img src="https://flagcdn.com/w40/gb.png" alt="GB">
+                </div>
+                <div data-value="ru">
+                  <span>Русский</span>
+                  <img src="https://flagcdn.com/w40/ru.png" alt="RU">
+                </div>
+                <div data-value="zh">
+                  <span>中文</span>
+                  <img src="https://flagcdn.com/w40/cn.png" alt="CN">
+                </div>
+                <div data-value="es">
+                  <span>Español</span>
+                  <img src="https://flagcdn.com/w40/es.png" alt="ES">
+                </div>
+              </div>
+            </div>
+          </div>
+          
       </header>
   <main class="checkout-container">
     <section class="checkout-form">
@@ -87,5 +109,6 @@
         <button class="place-order">Place order</button>
       </aside>
   </main>
+  <script src="./script.js"></script>
 </body>
 </html>
