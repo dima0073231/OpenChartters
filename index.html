@@ -6,6 +6,10 @@
   <title>OpenChatters</title>
   <link rel="stylesheet" href="./style.css" />
 </head>
+<head>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+</head>
+
 <body>
   <header>
     <img class="logo" src="./img.png" alt="">
@@ -22,7 +26,7 @@
         <li><a href="#" data-i18n="blog">Блог</a></li>
         <li><a href="#" data-i18n="about">Про нас</a></li>
         <li><a href="#" data-i18n="account">Мій Аккаунт</a></li>
-        <li><a href="#" class="cart-icon" onclick="toggleCart()">🛒</a></li>
+        <img src="./basket.png" alt="" class="basket" onclick="toggleCart()"></li>
       </ul>
     </nav>
    
@@ -84,7 +88,9 @@
          
         </ul>
         <p data-i18n="price">Price: €10</p>
-        <button onclick="addToCart('card1', 10)" class="add-btn" data-i18n="basket">Добавить в корзину</button>
+        <button onclick="addToCart('card1', 10)" class="add-btn" data-i18n="basket">Добавить в корзину
+          <img src="./shopping-bag.png" alt="" class="shopping-bag">
+        </button>
       </div>
 
       <div class="service-card">
@@ -94,7 +100,9 @@
          
         </ul>
         <p data-i18n="price">Price: €12</p>
-        <button onclick="addToCart('card2', 12)" class="add-btn" data-i18n="basket">Добавить в корзину</button>
+        <button onclick="addToCart('card2', 12)" class="add-btn" data-i18n="basket">Добавить в корзину
+          <img src="./shopping-bag.png" alt="" class="shopping-bag">
+        </button>
       </div>
 
       <div class="service-card">
@@ -104,7 +112,9 @@
          
         </ul>
         <p data-i18n="price">Price: €15</p>
-        <button onclick="addToCart('card3', 15)" class="add-btn" data-i18n="basket">Добавить в корзину</button>
+        <button onclick="addToCart('card3', 15)" class="add-btn" data-i18n="basket">Добавить в корзину
+          <img src="./shopping-bag.png" alt="" class="shopping-bag">
+        </button>
       </div>
     </div>
   </section>
