@@ -110,7 +110,7 @@ h1 {
   @media (min-width: 768px) {
 
     width: 1000px;
-    height: 620px;
+    height: 670px;
     padding-left: 100px;
     max-width: 100%;
   }
@@ -913,8 +913,8 @@ textarea {
   line-height: 1;
   letter-spacing: -2px;
   @media (min-width: 768px) {
-    width: 570px;
-  margin: 0 auto 40px 480px;
+    width: 1000px;
+  margin: 0 auto 40px 320px;
   font-size: 64px;
   line-height: 1;
   letter-spacing: -2px;
@@ -926,6 +926,15 @@ textarea {
   max-width: 600px;
   margin: 0 auto 40px auto;
   font-size: 18px;
+  
+
+}
+.stepp{
+  color: #666;
+  max-width: 500px;
+  margin: 0 auto 40px auto;
+  font-size: 18px;
+  padding-left: 80px;
 }
 .steps {
   display: flex;
