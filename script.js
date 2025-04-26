@@ -72,7 +72,7 @@ const translations = {
     choose_service: "Choose your service",
     choose_instuments: "Choose your creative tool",
     price: "Price",
-    basket: "Add to basket",
+    basket: "Add to cart",
   },
   ru: {
     service: "Сервис",

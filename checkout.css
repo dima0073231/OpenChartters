@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .form-section {
+    flex: 2;
+    padding: 20px;
+  }
+  .order-summary {
+    flex: 1;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+  h2, h3 {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .payment-method {
+    margin-bottom: 20px;
+  }
+  .card-input {
+    display: flex;
+    gap: 10px;
+  }
+  .card-input input {
+    flex: 1;
+  }
+  .place-order {
+    width: 100%;
+    padding: 15px;
+    background-color: #0056ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  .place-order:hover {
+    background-color: #0044cc;
+    transform: scale(1.05);
+  }
+  .success-message {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: green;
+    animation: fadeIn 1s forwards;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .order-summary {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
