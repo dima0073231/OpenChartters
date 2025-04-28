@@ -96,7 +96,47 @@ const translations = {
   promoteppppp:"Our system activates your access in just a few minutes — no waiting.",
   promotepppppp:"Our team is online 24/7 — available in English, Ukrainian, and Russian.",
   promoteppppppp:"We use trusted, protected payment systems. Your data and funds are safe.",
-  },
+footer:"FOP Knysh Alla Oleksandrivna 08297 Kyiv region, Bucha district, Bucha city, Shose Nove, building 42",
+footerh3:"Payment and Returns",
+  footerh33:"Privacy Policy", 
+  footerh333:"Terms of Use", 
+  footerh3333:"About Us", 
+  footerh33333:"Contacts", 
+  footerp:"OpenChatters 2025 © All rights reserved",
+  footera :"Back to the top",
+  reviewTitle: "Your satisfaction drives us to grow!",
+  alex_name: "Alex",
+  alex_text: "Got instant access, exactly as promised. Thanks for the service! 👍",
+  marina_name: "Marina",
+  marina_text: "Signed up in one minute. Super easy and no hassle.",
+  ivan_name: "Ivan",
+  ivan_text: "Great prices and fast activation. Using it for the second month already. 🔥",
+  daria_name: "Daria",
+  daria_text: "Didn’t expect it to be that fast. Got access to Midjourney in 3 minutes!",
+  sergey_name: "Sergey",
+  sergey_text: "Amazing service! Everything honest, accounts working, fast support. 👌",
+  julia_name: "Julia",
+  julia_text: "Loved the $1 trial access option. Everything works perfectly! 😊",
+  nikita_name: "Nikita",
+  nikita_text: "Smooth process: paid and received access without any issues. Will recommend!",
+  olga_name: "Olga",
+  olga_text: "ChatGPT subscription activated instantly. Loving it. 👍",
+  artem_name: "Artem",
+  artem_text: "Trial version really helped me decide before buying. Respect! 🙌",
+  katerina_name: "Katerina",
+  katerina_text: "Finally found a convenient platform for subscriptions. Only with you now.",
+  vladimir_name: "Vladimir",
+  vladimir_text: "Bought Canva access — got login details immediately. Quick and easy. 😉",
+  alina_name: "Alina",
+  alina_text: "Support is polite and truly helpful, not just standard replies.",
+  max_name: "Max",
+  max_text: "Paid at night — got access within 5 minutes. You guys rock! 🚀",
+  tatiana_name: "Tatiana",
+  tatiana_text: "Instructions were clear, got access without any problems.",
+  denis_name: "Denis",
+  denis_text: "Totally worth the money! Thanks for the great work. 👏"
+  
+},
   ru: {
     service: "Сервис",
     faq: "FAQ",
@@ -132,6 +172,45 @@ const translations = {
     promoteppppp:"Система автоматически выдаёт доступ за несколько минут.",
     promotepppppp:"На связи круглосуточно — на русском, английском и украинском языках.",
     promoteppppppp:"Используем только защищённые платёжные системы. Ваши данные в безопасности.",
+   footer:"ФОП Кныш Алла Александровна 08297, Киевская обл., Бучанский р-н, г. Буча, шоссе Новое, дом 42",
+   footerh3:"Оплата и возврат",
+  footerh33:"Политика конфиденциальности", 
+  footerh333:"Условия пользования", 
+  footerh3333:"О нас", 
+  footerh33333:"Контакты",
+  footerp:"Все права защищены",
+  footera :"Наверх", 
+  reviewTitle: "Ваше удовлетворение вдохновляет нас расти!",
+  alex_name: "Алексей",
+  alex_text: "Быстро получил доступ, всё четко как обещали. Спасибо за сервис! 👍",
+  marina_name: "Марина",
+  marina_text: "Оформила подписку за минуту. Очень удобно и никаких лишних движений.",
+  ivan_name: "Иван",
+  ivan_text: "Отличные цены и моментальная активация. Уже пользуюсь второй месяц. 🔥",
+  daria_name: "Дарья",
+  daria_text: "Не ожидала, что будет так быстро. Доступ к Midjourney через 3 минуты!",
+  sergey_name: "Сергей",
+  sergey_text: "Супер сервис! Всё честно, доступы рабочие, поддержка отвечает за пару минут. 👌",
+  julia_name: "Юлия",
+  julia_text: "Очень понравилась возможность тестового доступа за 1 доллар. Всё работает! 😊",
+  nikita_name: "Никита",
+  nikita_text: "Всё четко: оплатил — получил доступ без проблем. Буду рекомендовать друзьям.",
+  olga_name: "Ольга",
+  olga_text: "Подписка на ChatGPT активировалась мгновенно. Всё нравится. 👍",
+  artem_name: "Артем",
+  artem_text: "Тестовая версия реально помогла определиться перед покупкой. Респект! 🙌",
+  katerina_name: "Катерина",
+  katerina_text: "Давно искала удобную площадку для подписок. Теперь только через вас.",
+  vladimir_name: "Владимир",
+  vladimir_text: "Купил доступ к Canva — сразу выдали логин. Быстро и без лишних вопросов. 😉",
+  alina_name: "Алина",
+  alina_text: "Поддержка очень вежливая и действительно помогает, а не кормит отговорками.",
+  max_name: "Максим",
+  max_text: "Заплатил ночью — доступ получил за 5 минут. Работаете круто! 🚀",
+  tatiana_name: "Татьяна",
+  tatiana_text: "Все инструкции были понятными, доступ получила без единой ошибки.",
+  denis_name: "Денис",
+  denis_text: "Сервис стоит своих денег! Спасибо за качественную работу. 👏"
   },
   uk: {
     service: "Сервіс",
@@ -169,6 +248,45 @@ const translations = {
     promotepppp:"Автоматична система надає доступ протягом кількох хвилин.",
     promoteppppp:"Ми на зв’язку цілодобово — українською, англійською та російською.",
     promotepppppp:"Працюємо через захищені платіжні системи. Ваші гроші та дані під надійним захистом.",
+    footer:" ФОП Книш Алла Олександрівна 08297, Київська обл., Бучанський р-н, м. Буча, шосе Нове, будинок 42",
+    footerh3:"Оплата та повернення",
+   footerh33:"Політика конфіденціальності", 
+   footerh333:"Условия пользования", 
+   footerh3333:"Про нас", 
+   footerh33333:"Контакти", 
+   footerp:"OpenChatters 2025 © Всі права захищено",
+    footera :"На верх",
+    reviewTitle: "Ваше задоволення спонукає нас до зростання!",
+    alex_name: "Олексій",
+    alex_text: "Швидко отримав доступ, все чітко як обіцяли. Дякую за сервіс! 👍",
+    marina_name: "Марина",
+    marina_text: "Оформила підписку за хвилину. Дуже зручно і без зайвих дій.",
+    ivan_name: "Іван",
+    ivan_text: "Чудові ціни і миттєва активація. Користуюсь вже другий місяць. 🔥",
+    daria_name: "Дар'я",
+    daria_text: "Не очікувала, що буде так швидко. Доступ до Midjourney за 3 хвилини!",
+    sergey_name: "Сергій",
+    sergey_text: "Супер сервіс! Все чесно, доступи працюють, підтримка відповідає за хвилини. 👌",
+    julia_name: "Юлія",
+    julia_text: "Дуже сподобалась можливість тестового доступу за 1 долар. Все працює! 😊",
+    nikita_name: "Микита",
+    nikita_text: "Все чітко: оплатив — отримав доступ без проблем. Рекомендую друзям.",
+    olga_name: "Ольга",
+    olga_text: "Підписка на ChatGPT активувалась миттєво. Все подобається. 👍",
+    artem_name: "Артем",
+    artem_text: "Тестова версія реально допомогла визначитись перед покупкою. Респект! 🙌",
+    katerina_name: "Катерина",
+    katerina_text: "Давно шукала таку зручну платформу для підписок. Тепер тільки через вас.",
+    vladimir_name: "Володимир",
+    vladimir_text: "Купив доступ до Canva — одразу отримав логін. Швидко та без зайвих питань. 😉",
+    alina_name: "Аліна",
+    alina_text: "Підтримка дуже ввічлива і дійсно допомагає, а не відмахується.",
+    max_name: "Максим",
+    max_text: "Оплатив вночі — доступ отримав за 5 хвилин. Ви круті! 🚀",
+    tatiana_name: "Тетяна",
+    tatiana_text: "Інструкції були зрозумілі, доступ отримала без жодної помилки.",
+    denis_name: "Денис",
+    denis_text: "Сервіс вартий своїх грошей! Дякую за якісну роботу. 👏"
   },
   zh: {
     service: "服务",
@@ -205,6 +323,14 @@ const translations = {
     promoteppppp:"系统将在几分钟内**自动为您开通服务，无需等待。",
     promotepppppp:"我们提供 24/7 支持**，支持**英语**、**乌克兰语**和**俄语**。",
     promoteppppppp:"我们使用**受保护的支付方式**，确保交易安全无忧。",
+    footer:"FOP Knysh Alla Oleksandrivna 08297, región de Kyiv, distrito de Bucha, ciudad de Bucha, Shose Nove, edificio 42",
+    footerh3:"付款與退貨",
+   footerh33:"隱私權政策", 
+   footerh333:"使用條款", 
+   footerh3333:"關於我們", 
+   footerh33333:"聯絡我們", 
+    footerp:"OpenChatters 2025 © 版權所有",
+      footera :"回到顶部",
   },
   es: {
     service: "Servicio",
@@ -241,7 +367,46 @@ const translations = {
     promoteppppp:"El acceso se activa automáticamente en pocos minutos.",
     promotepppppp:"Nuestro equipo está disponible todo el día, en inglés, ucraniano y ruso.",
     promoteppppppp:"Usamos sistemas de pago protegidos. Tus datos y dinero están seguros.",
-}
+    footer:"FOP Knysh Alla Oleksandrivna 08297, región de Kyiv, distrito de Bucha, ciudad de Bucha, Shose Nove, edificio 42",
+    footerh3:"Pagos y devoluciones",
+   footerh33:"Política de privacidad", 
+   footerh333:"Condiciones de uso", 
+   footerh3333:"Quiénes somos", 
+   footerh33333:"Contactos",
+    footerp:"OpenChatters 2025 © Todos los derechos reservados",
+      footera :"Volver arriba", 
+      "reviewTitle": "¡Tu satisfacción nos impulsa a crecer!",
+  "alex_name": "Alex",
+  "alex_text": "Acceso rápido, tal como prometieron. ¡Gracias por el servicio! 👍",
+  "marina_name": "Marina",
+  "marina_text": "Suscripción en un minuto. Muy fácil y sin complicaciones.",
+  "ivan_name": "Iván",
+  "ivan_text": "Excelentes precios y activación instantánea. ¡Ya estoy en el segundo mes! 🔥",
+  "daria_name": "Daria",
+  "daria_text": "¡No esperaba que fuera tan rápido! Acceso a Midjourney en 3 minutos.",
+  "sergey_name": "Sergio",
+  "sergey_text": "¡Servicio excelente! Todo transparente, acceso funcionando, soporte rápido. 👌",
+  "julia_name": "Julia",
+  "julia_text": "Me encantó la opción de prueba por 1 dólar. ¡Todo funciona perfecto! 😊",
+  "nikita_name": "Nikita",
+  "nikita_text": "Proceso sencillo: pagué y recibí acceso sin problemas. ¡Recomiendo!",
+  "olga_name": "Olga",
+  "olga_text": "La suscripción a ChatGPT se activó al instante. Muy satisfecha. 👍",
+  "artem_name": "Artem",
+  "artem_text": "La prueba gratuita me ayudó a decidir antes de comprar. ¡Respeto! 🙌",
+  "katerina_name": "Katerina",
+  "katerina_text": "Finalmente encontré una plataforma cómoda para suscripciones. ¡Ahora solo con ustedes!",
+  "vladimir_name": "Vladimir",
+  "vladimir_text": "Compré acceso a Canva — recibí los datos de acceso de inmediato. Rápido y sencillo. 😉",
+  "alina_name": "Alina",
+  "alina_text": "El soporte es muy amable y realmente ayuda, no solo respuestas automáticas.",
+  "max_name": "Max",
+  "max_text": "Pagué de noche y recibí acceso en 5 minutos. ¡Son los mejores! 🚀",
+  "tatiana_name": "Tatiana",
+  "tatiana_text": "Las instrucciones fueron claras, recibí el acceso sin errores.",
+  "denis_name": "Denis",
+  "denis_text": "¡Vale totalmente lo que cuesta! Gracias por el excelente servicio. 👏"
+  }
 }
 
 function changeLanguage(lang) {
@@ -313,6 +478,65 @@ options.forEach(option => {
     const langValue = option.getAttribute("data-value");
     changeLanguage(langValue); // Ваша функція зміни мови
   });
+});
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+
+let currentSlide = 0;
+
+function showSlide(index) {
+  slides.forEach((slide, idx) => {
+    slide.classList.remove('active');
+    dots[idx].classList.remove('active');
+    if (idx === index) {
+      slide.classList.add('active');
+      dots[idx].classList.add('active');
+    }
+  });
+}
+
+dots.forEach((dot, idx) => {
+  dot.addEventListener('click', () => {
+    currentSlide = idx;
+    showSlide(currentSlide);
+  });
+});
+
+// Автопрокрутка
+setInterval(() => {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}, 5000);
+document.querySelector('.back-to-top').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  speed: 1000, // скорость перехода (мягкая анимация)
+  autoplay: {
+    delay: 2500,  // задержка между автопрокруткой (2.5 секунды)
+    disableOnInteraction: false, // даже если пользователь нажимает мышкой
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    768: { slidesPerView: 2 },
+    1200: { slidesPerView: 3 },
+    1920: { slidesPerView: 4 },
+  }
 });
   
 
