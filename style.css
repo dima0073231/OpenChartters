@@ -693,6 +693,10 @@ textarea {
   }
 
 }
+.hidden {
+  display: none;
+}
+
 
 
 
@@ -1023,10 +1027,7 @@ textarea {
   margin-bottom: 10px;
   
 }
-.swiper-pagination{
-  bottom: var(--swiper-pagination-bottom, 0px) !important;
-  
-}
+
 .review-name {
   font-weight: bold;
   margin-bottom: 10px;
@@ -1069,6 +1070,15 @@ textarea {
   .review-text {
     font-size: 1.5rem;
   }
+}
+.swiper-pagination {
+  
+  padding-bottom: 150px; 
+  position: absolute;
+  
+  transform: translateX(-50%);
+  
+ 
 }
 
 .footer {

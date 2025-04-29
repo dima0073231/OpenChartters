@@ -342,58 +342,34 @@
 
 
 
-  <div id="cartModal" class="cart-modal">
-    <div class="cart-content">
-      <span class="close-btn" onclick="toggleCart()">&times;</span>
-      <h2>Cart</h2>
-      <ul id="cart-items" class="cart-items"></ul>
-      <p class="total-label">Total:</p>
-      <p class="total-amount" id="total-amount">€ 0.00</p>
-      <div class="promo">
-        <label for="promo-input">Add a Promo code</label>
-        <div class="promo-code-input">
-          <input type="text" id="promo-input" placeholder="Enter promo code" />
-          <button onclick="applyPromo()">Apply</button>
-        </div>
-        <p id="promo-message"></p>
+<div id="cartModal" class="cart-modal hidden">
+  <div class="cart-content">
+    <span class="close-btn" onclick="toggleCart()">&times;</span>
+    <h2>Cart</h2>
+    <ul id="cart-items" class="cart-items"></ul>
+    <p class="total-label">Total:</p>
+    <p class="total-amount" id="total-amount">€ 0.00</p>
+    <div class="promo">
+      <label for="promo-input">Add a Promo code</label>
+      <div class="promo-code-input">
+        <input type="text" id="promo-input" placeholder="Enter promo code" />
+        <button onclick="applyPromo()">Apply</button>
       </div>
-      <div class="cart-buttons">
-        <button class="continue-btn">
-          <a href="#services-section">Continue shopping</a></button>
-        <button class="checkout-btn" data-title="SoundCloud Starter Guide: Grow Your Fans and Plays" data-price="50.00"
-          data-quantity="1">
-          Checkout
-        </button>
-
-      </div>
-      <label class="terms">
-        <input type="checkbox" checked />
-        I have read <a href="#">terms and conditions</a> and agree to them
-      </label>
+      <p id="promo-message"></p>
     </div>
-  </div>
-
-  <div id="cartModal" class="cart-modal">
-    <div class="cart-content">
-      <span class="close-btn" onclick="toggleCart()">&times;</span>
-      <h2>Cart</h2>
-      <ul id="cart-items" class="cart-items"></ul>
-      <p class="total-label">Total:</p>
-      <p class="total-amount">€ 0,00</p>
-      <div class="promo">
-        <label>Add a Promo code</label>
-        <button class="promo-btn">+</button>
-      </div>
-      <div class="cart-buttons">
-        <button class="continue-btn">Continue shopping</button>
-        <button class="checkout-btn">Checkout</button>
-      </div>
-      <label class="terms">
-        <input type="checkbox" checked />
-        I have read <a href="#">terms and conditions</a> and agree to them
-      </label>
+    <div class="cart-buttons">
+      <button class="continue-btn">
+        <a href="#services-section">Continue shopping</a></button>
+      <button class="checkout-btn">
+        Checkout
+      </button>
     </div>
+    <label class="terms">
+      <input type="checkbox" checked />
+      I have read <a href="#">terms and conditions</a> and agree to them
+    </label>
   </div>
+</div>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./script.js"></script>
 </body>

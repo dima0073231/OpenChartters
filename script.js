@@ -19,6 +19,7 @@ function toggleCart() {
   document.getElementById('cartModal').classList.toggle('active');
 }
 
+
 function toggleMenu() {
   const navbar = document.getElementById('navbar');
   navbar.classList.toggle('active');
@@ -538,6 +539,7 @@ const swiper = new Swiper('.swiper', {
     1920: { slidesPerView: 4 },
   }
 });
+
   
 
 
