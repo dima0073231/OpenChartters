@@ -670,7 +670,7 @@ textarea {
 
 .custom-select .options div {
   padding: 10px;
-  padding-left: 100 px;
+  padding-left: 100px;
   display: flex;
 
 
@@ -685,7 +685,7 @@ textarea {
   width: 140px;
   font-family: sans-serif;
   margin-top: 60px;
-  margin-left: 247px;
+  margin-left: 217px;
 
   @media (min-width: 768px) {
     margin-left: 0;
@@ -695,6 +695,11 @@ textarea {
 }
 .hidden {
   display: none;
+}
+.stars {
+  color: #ffc107;
+  margin-bottom: 0.5rem;
+  align-items: center;
 }
 
 
@@ -1007,7 +1012,7 @@ textarea {
   width: 100%;
   padding-top: 50px;
   padding: 80px;
-  height: 180px;
+  height: 220px;
   
 }
 .swiper-slide {
@@ -1017,12 +1022,14 @@ textarea {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  
+  align-items: center;
   
 }
 .swiper-slide img {
   width: 60px;
   height: 60px;
+  margin-bottom: 10px;
   border-radius: 100px;
   margin-bottom: 10px;
   
@@ -1030,8 +1037,11 @@ textarea {
 
 .review-name {
   font-weight: bold;
-  margin-bottom: 10px;
+  align-items: center;
   font-size: 1.2rem;
+  width: 16px;
+  vertical-align: middle;
+  margin-right: px;;
 }
 .review-title{
   font-size: 34px;
@@ -1048,7 +1058,7 @@ textarea {
 
 @media (min-width: 768px) {
   .swiper-slide {
-    margin: 0 10px;
+ 
   }
 }
 @media (min-width: 1200px) {
@@ -1056,7 +1066,7 @@ textarea {
     font-size: 64px;
     line-height: 1;
     letter-spacing: -2px;
-    margin-bottom: 72px;
+   
   }
 }
 @media (min-width: 2560px) {
@@ -1073,7 +1083,7 @@ textarea {
 }
 .swiper-pagination {
   
-  padding-bottom: 158px; 
+  padding-bottom: 185px; 
   position: absolute;
   
   transform: translateX(-50%);
@@ -1182,7 +1192,8 @@ textarea {
   }
 
 .footer-payments img {
-  height: 30px;
+  height: 130px;
+  width: 130px;
 }
 
 /* Адаптив для планшетов */
