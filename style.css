@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: '', sans-serif;
+  font-family: 'poppins', sans-serif;
   background-color: #fff;
   color: #111;
 
@@ -632,11 +632,7 @@ textarea {
   margin-left: 10px;
 }
 
-.custom-select-wrapper {
-  position: relative;
-  width: 120px;
-  font-family: sans-serif;
-}
+
 
 .custom-select {
   background: #fff;
@@ -689,7 +685,7 @@ textarea {
   width: 140px;
   font-family: sans-serif;
   margin-top: 60px;
-  margin-left: 257px;
+  margin-left: 247px;
 
   @media (min-width: 768px) {
     margin-left: 0;
@@ -915,6 +911,7 @@ textarea {
   font-size: 32px;
   line-height: 1;
   letter-spacing: -2px;
+  text-align: center;
   @media (min-width: 768px) {
     width: 1000px;
   margin: 0 auto 40px 250px;
@@ -1022,8 +1019,12 @@ textarea {
 .swiper-slide img {
   width: 60px;
   height: 60px;
-  border-radius: 50%;
+  border-radius: 100px;
   margin-bottom: 10px;
+  
+}
+.swiper-pagination{
+  bottom: var(--swiper-pagination-bottom, 0px) !important;
   
 }
 .review-name {
