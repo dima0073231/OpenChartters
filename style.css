@@ -685,10 +685,10 @@ textarea {
   width: 140px;
   font-family: sans-serif;
   margin-top: 60px;
-  margin-left: 217px;
+  margin-left: 207px;
 
   @media (min-width: 768px) {
-    margin-left: 0;
+    margin-left: 207px;
     margin-top: 0;
   }
 
@@ -1037,11 +1037,9 @@ textarea {
 
 .review-name {
   font-weight: bold;
-  align-items: center;
   font-size: 1.2rem;
-  width: 16px;
-  vertical-align: middle;
-  margin-right: px;;
+  margin: 0;
+  width: auto; /* убираем фиксированную ширину */
 }
 .review-title{
   font-size: 34px;
@@ -1050,6 +1048,16 @@ textarea {
  
   margin-bottom: 72px;
     text-align: center;
+}
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.review-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
 }
 .review-text {
   font-size: 1rem;
@@ -1083,7 +1091,7 @@ textarea {
 }
 .swiper-pagination {
   
-  padding-bottom: 185px; 
+  padding-bottom: 5px; 
   position: absolute;
   
   transform: translateX(-50%);
@@ -1223,21 +1231,52 @@ textarea {
 
 /* Адаптив для телефонов */
 @media (max-width: 480px) {
-  .footer {
-    padding: 30px 10px;
+  @media (max-width: 480px) {
+    .footer {
+      padding: 30px 20px;
+      border-radius: 40px 40px 0 0;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+  
+    .footer-brand {
+      text-align: center;
+    }
+  
+    .footer-links {
+      margin-left: 0;
+      flex-direction: column;
+      align-items: center;
+      gap: 0px;
+    }
+  
+    .footer-links > div {
+      flex: 1 1 auto;
+      text-align: center;
+    
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0px;
+      margin-top: 20px;
+    }
+  
+    .footer-payments {
+      display: none; /* опционально: скрыть иконки оплаты на телефонах */
+    }
+  
+    .back-to-top {
+      display: none; /* опционально: убрать кнопку вверх */
+    }
   }
   
-  .footer-links > div {
-    flex: 1 1 100%;
-    text-align: center;
-  }
-  .footer-payments {
-    display: none;
-    
-  }
-  .back-to-top{
-    display: none;
-  }
 }
 
 /* Адаптив для 4K мониторов */
