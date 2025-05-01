@@ -17,8 +17,16 @@
 </head>
 
 <body>
+  <div id="preloader" class="preloader">
+    <video autoplay muted loop playsinline id="preloader-video">
+      <source src="./predloader.mp4" type="video/mp4">
+      Ваш браузер не підтримує відео.
+    </video>
+  </div>
   <header id="header">
-    <img class="logo" src="./img.png" alt="">
+    <video autoplay muted loop playsinline width="150" height="150" class="logo">
+      <source src="./logo1.mp4" type="video/mp4">
+    </video>
     <div class="menu-toggle" onclick="toggleMenu()">
       <span class="bar"></span>
       <span class="bar"></span>

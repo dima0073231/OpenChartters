@@ -539,7 +539,13 @@ const swiper = new Swiper('.swiper', {
     1920: { slidesPerView: 4 },
   }
 });
-
-  
+document.addEventListener('DOMContentLoaded', function () {
+  setTimeout(() => {
+    const preloader = document.getElementById('preloader');
+    preloader.style.opacity = '0';
+    preloader.style.pointerEvents = 'none';
+    setTimeout(() => preloader.remove(), 500);
+  }, 1000); // 3 секунды
+});
 
 
