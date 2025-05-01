@@ -334,7 +334,7 @@ h1 {
   .menu-toggle {
     display: flex;
     position: absolute;
-    bottom: 513px;
+    bottom: 855px;
     right: 18px;
     z-index: 1002;
 
@@ -685,7 +685,7 @@ textarea {
   width: 135px;
   font-family: sans-serif;
   margin-top: 18px;
-  margin-left: 160px;
+  margin-left: 190px;
 
   @media (min-width: 768px) {
     margin-left: 207px;
